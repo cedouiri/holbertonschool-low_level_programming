@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
+#include <stdlib.h>
 
 /**
-* main - entry point
-* @void: no argument
-* Return: always 0 (success)
+ * main - entry block
+ * @void: no argument
+ * Return: 0 (Sucess)
 **/
 int main(void)
 {
@@ -15,9 +15,9 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d  is positive\n", n);
+		printf("%d is positive\n", n);
 	}
-	else if	(n == 0)
+	else if (n == 0)
 	{
 		printf("%d is zero\n", n);
 	}
