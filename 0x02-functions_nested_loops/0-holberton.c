@@ -8,7 +8,6 @@
 int main(void)
 {
 char holberton[] = "Holberton";
-
 int c;
 
 for (c = 0; c < 9; c++)
