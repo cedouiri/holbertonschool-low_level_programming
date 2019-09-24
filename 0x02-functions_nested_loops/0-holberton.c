@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
 * main - entry block
 * print msg
@@ -7,12 +6,11 @@
 **/
 int main(void)
 {
-char holberton[] = "Holberton";
-int c;
+char *c = "Holberton";
 
-for (c = 0; c < 9; c++)
+while (*c)
 {
-_putchar(holberton[c]);
+_putchar(*c++);
 }
 _putchar('\n');
 return (0);
