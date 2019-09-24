@@ -2,7 +2,7 @@
 
 /**
 * main - entry block
-* @void: no argument
+* print msg
 * Return: 0
 **/
 int main(void)
