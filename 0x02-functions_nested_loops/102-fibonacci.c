@@ -1,32 +1,27 @@
 #include <stdio.h>
+#include "holberton.h"
+
 /**
-* main - entry block
-* @void: no argument
-* Return: 0
-**/
+ *main - print fibo
+ *
+ *Return: 0
+ */
+
 int main(void)
 {
-	long int counter;
-	long int curr = 2;
-	long int prev = 1;
-	long int sum = 0;
+	long i, j, sum, count;
 
-	printf("%lu, ", prev);
-	printf("%lu, ", curr);
-
-	for (counter = 3; counter < 49; counter++)
+	i = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
-		sum = prev + curr;
-		prev = curr;
-		curr = sum;
-		if (counter < 48)
-		{
-			printf("%lu, ", sum);
-		}
+		sum = i + j;
+		i = j;
+		j = sum;
+		if (count != 49)
+			printf("%ld, ", sum);
 		else
-		{
-			 printf("%lu\n", sum);
-		}
+			printf("%ld\n", sum);
 	}
 	return (0);
 }
