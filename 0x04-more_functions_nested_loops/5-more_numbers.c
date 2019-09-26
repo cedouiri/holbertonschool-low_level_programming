@@ -4,7 +4,7 @@
 *
 *Return: from 0 to 14 10 times, followed by a new line.
 **/
-void print_most_numbers(void)
+void more_numbers(void)
 {
 int l, c;
 
@@ -16,6 +16,6 @@ int l, c;
 				_putchar((c / 10) + '0');
 			_putchar((c % 10) + '0');
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
