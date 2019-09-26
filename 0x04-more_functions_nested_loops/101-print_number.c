@@ -23,7 +23,7 @@ void print_number(int n)
 	while ((j / 10) != 0)
 	{
 		d = j % 10;
-		num[place] = d;
+		num[p] = d;
 		p++;
 		j = j / 10;
 	}
