@@ -1,19 +1,22 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
-* *_strcpy - copies string pointed to by src
-* @dest: character pointer
-* @src: character source
-*Return: the pointer to dest
-**/
+ * _strcpy - entry point
+ * Description: copies the string pointer, null byte, dest pointer
+ * @dest: destiny
+ * @src: font
+ * Return: dest pointer
+ */
+
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int i = 0, j = 0;
 
-	for (i = 0; *(src + i) != '\0'; i++)
+	for (; src[i] != '\0'; i++)
 	{
-		*(dest + i) = *(src + i);
+		dest[i] = src[i];
 	}
-
+	dest[i] = '\0';
+		j++;
 	return (dest);
 }
