@@ -1,40 +1,19 @@
 #include "holberton.h"
 
 /**
-* _strlen - get length of a string.
-* @s: a pointer to a char
-* Return: length of a string
+* *_strcpy - copies string pointed to by src
+* @dest: character pointer
+* @src: character source
+*Return: the pointer to dest
 **/
-
-int _strlen(char *s)
-{
-	int l, i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	l = i;
-	return (l);
-}
-
-/**
-* *_strcpy - copies the string pointed to by src
-* @dest: a pointer to string
-* @src: a pointer to int
-* Return: the pointer to dest
-**/
-
 char *_strcpy(char *dest, char *src)
 {
 	int i;
-	char *c;
-	int l = _strlen(src);
 
-	for (i = 0; i < l; i++)
+	for (i = 0; *(src + i) != '\0'; i++)
 	{
-		dest[i] = src[i];
+		*(dest + i) = *(src + i);
 	}
-	c = dest;
-	return (c);
+
+	return (dest);
 }
