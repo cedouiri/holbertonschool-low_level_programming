@@ -48,5 +48,5 @@ char *d = s + (i - 1);
 
 if (i == 0)
 return (1);
-return (_str_scan(c, d));
+return (_scan(c, d));
 }
