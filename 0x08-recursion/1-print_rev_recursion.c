@@ -2,7 +2,6 @@
 /**
 * _print_rev_recursion -
 * @s: pointer to array of char
-* Return: print string to output
 **/
 
 void _print_rev_recursion(char *s)
