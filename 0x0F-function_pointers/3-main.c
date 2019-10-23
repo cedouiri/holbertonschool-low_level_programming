@@ -1,22 +1,38 @@
-#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
-* main - the main
-* @argc: arguments
-* @argv: size of argc
-* Return: always 0
-**/
-int main(int argc, char **argv)
-{
-	int x;
+#include "3-calc.h"
 
-	if (argc != 4)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-	x = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", x);
-	return (0);
+/**
+* main - Entry point
+* @ac: arguments
+* @av: size of ac
+* Return: Always 0
+**/
+
+int main(int ac, char **av)
+{
+int num1, num2;
+char op;
+
+if (ac != 4)
+{
+printf("Error\n");
+exit(98);
+}
+op = av[2][0];
+num1 = atoi(av[1]);
+num2 = atoi(av[3]);
+if (av[2][1])
+{
+printf("Error\n");
+exit(99);
+}
+if ((num2 == 0 && op == '/') || (num2 == 0 && op == '%'))
+{
+printf("Error\n");
+exit(100);
+}
+printf("%i\n", get_op_func(av[2])(num1, num2));
+
+return (0);
 }
