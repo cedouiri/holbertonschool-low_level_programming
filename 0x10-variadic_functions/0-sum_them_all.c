@@ -3,8 +3,8 @@
 #include <stdarg.h>
 /**
 * sum_them_all - a fun returns the sum of all its parameters
-* @n: const unsigned int
-* Return: sum of all integers
+* @n: number of arguments
+* Return: sum of arguments
 **/
 int sum_them_all(const unsigned int n, ...)
 {
