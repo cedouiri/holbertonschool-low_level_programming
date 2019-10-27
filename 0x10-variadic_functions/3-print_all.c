@@ -82,7 +82,7 @@ while (p[j].f)
 if (*(p[j].f) == format[i])
 {
 printf("%s", str);
-p[j].printType(args);
+p[j].func(args);
 str = ", ";
 }
 j++;
