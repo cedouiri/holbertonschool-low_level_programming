@@ -1,10 +1,11 @@
 #ifndef header
 #define header
+#include <stdarg.h>
 
 typedef struct format
 {
 	char *f;
-	void (*func)(void *);
+	void (*func)(va_list vargs);
 } form;
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
