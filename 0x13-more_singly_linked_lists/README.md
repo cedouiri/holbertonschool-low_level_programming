@@ -7,4 +7,4 @@ A linked list, in its simplest form, in a collection of nodes that collectively 
 
 | File | Description |
 | ---- | ----------- |
-|
+| [lists.h](https://github.com/cedouiri/holbertonschool-low_level_programming/blob/master/0x13-more_singly_linked_lists/lists.h) | header file |
